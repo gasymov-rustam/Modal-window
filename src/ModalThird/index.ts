@@ -1,0 +1,1 @@
+export { ModalThird } from './ModalThird';

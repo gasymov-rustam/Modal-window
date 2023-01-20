@@ -1,0 +1,91 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlayEnter {
+  width: 0;
+}
+
+.overlayEnterActive {
+  width: 100%;
+  transition: width 500ms ease-out;
+}
+
+.overlayExit {
+  width: 100%;
+}
+
+.overlayExitActive {
+  width: 0;
+  transition: width 500ms ease-out;
+}
+
+.container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.content {
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  overflow: auto;
+  background-color: #f8f8f8;
+  z-index: 3;
+  min-width: 400px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentEnter {
+  margin-right: -500px;
+}
+
+.contentEnterActive {
+  margin-right: 0;
+  transition: margin-right 500ms ease-out;
+}
+
+.contentExit {
+  margin-right: 0;
+}
+
+.contentExitActive {
+  margin-right: -500px;
+  transition: margin-right 500ms ease-out;
+}
+
+.btn {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: 400ms;
+}
+
+.btn:hover {
+  background: lightgray;
+  border: 1px solid violet;
+}

@@ -1,0 +1,16 @@
+.button {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalContent {
+  /* height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
